@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+#container {
+        border-top-left-radius: 10px;
+        width:50%;
+        margin:auto; 
+        margin-top:8%;   
+        border:none; 
+}
+
+.top {
+    background-color: #ffffff;
+    width:100%;
+    padding: 40px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.top > h1 {
+    color:var(--Cyan);
+}
+
+.top > h2 {
+    color:var(--Bright-Yellow);
+}
+
+.top > p {
+color:var(--Grayish-Blue);
+}
+
+.bottom {
+    display:flex;
+    flex-direction: row;
+    
+
+}
+
+.left {
+   background-color: var(--Cyan);
+   width:50%;
+   padding: 20px 35px 45px 35px;
+   color:#ffffff;
+   border-bottom-left-radius: 8px;
+
+}
+
+.left > span {
+    font-size:34px;
+    font-weight:700;
+}
+
+.price {
+    position: relative;
+    left:74px;
+    bottom:28px;
+    font-size:14px;
+    font-weight: 400;
+    
+}
+
+.left > p {
+    padding-bottom:35px;
+    line-height: 1px;
+}
+
+.button {
+    background-color: var(--Bright-Yellow);
+    padding:20px;
+    text-align: center;
+    border-radius: 6px;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px #2b645f;
+    cursor: pointer;
+   
+}
+
+.button:hover {
+    background-color: var(--Bright-Yellow);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.right {
+    background-color: #4abebd;
+    width:50%;
+    border-bottom-right-radius: 8px;
+    padding: 20px 35px 45px 35px;
+    color:#ffffff;
+}
+
+.right > ul {
+    font-weight:400;
+    width:55%;
+    line-height: 26px;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+/* mobile styles */
+
+@media only screen and (max-width: 600px) {
+    #container {
+        min-width:90%;
+        margin-top:20%;
+    }
+
+    .top{
+        padding: 20px;
+    }
+
+
+    .top > h1 {
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+
+    .top > h2 {
+        font-size:18px;
+    }
+
+    .top > p {
+        line-height: 25px;
+        font-size:14px;
+        letter-spacing: 0.6px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        padding:20px;
+        border-radius: none;
+        border-bottom-left-radius: 0px;
+    }
+
+    .right {
+        width:100%;
+        padding: 20px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .right > ul {
+        width: 100%;
+    }
+   
+}
